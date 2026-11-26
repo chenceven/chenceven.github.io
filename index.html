@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chen Xiwen — first-year Data Science and Big Data Technology student. A personal site with a short introduction, notes on learning, and selected coursework.">
   <title>Chen Xiwen · Personal Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-header">
     <a class="brand" href="index.html">Chen Xiwen<span class="dot">.</span></a>
     <nav class="nav">
@@ -17,7 +20,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
       <p class="eyebrow">Data Science &amp; Big Data Technology · First Year</p>
       <h1>Turning messy questions<br>into sentences I can explain.</h1>
@@ -31,6 +34,11 @@
         <a class="btn ghost" href="works.html">What I have been doing</a>
       </div>
     </section>
+
+    <figure class="media">
+      <img src="data-paper.jpg" alt="A notebook spread showing a scatter of dots and a thin line rising to the right, drawn in muted green and terracotta">
+      <figcaption>My favourite page: a pile of dots that finally turns into a line.</figcaption>
+    </figure>
 
     <section class="section">
       <div class="section-head">
@@ -54,6 +62,59 @@
           <p>Cleaning data, debugging a program, rewriting a paragraph — all of it needs someone willing to sit still. Slower, but never stopped.</p>
         </div>
       </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>This site in numbers</h2>
+        <span>at a glance</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption>Pages, files and rules I set for myself</caption>
+          <thead>
+            <tr>
+              <th scope="col">Page</th>
+              <th scope="col">What is on it</th>
+              <th scope="col">File</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Home</td>
+              <td>Short introduction and three keywords</td>
+              <td>index.html</td>
+            </tr>
+            <tr>
+              <td>About</td>
+              <td>Background, timeline and self-assessed skills</td>
+              <td>about.html</td>
+            </tr>
+            <tr>
+              <td>Works &amp; Interests</td>
+              <td>Coursework, practice and hobbies</td>
+              <td>works.html</td>
+            </tr>
+            <tr>
+              <td>CS2 (separate site)</td>
+              <td>Notes on Counter-Strike 2</td>
+              <td>chenceven.github.io/cs2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Looking for something?</h2>
+        <span>utility</span>
+      </div>
+      <p class="lead">The search below sends your words to a search engine and opens the results in a new tab.</p>
+      <form class="search-form" action="https://www.google.com/search" method="get" target="_blank" rel="noopener">
+        <input type="search" name="q" aria-label="Search the web" placeholder="Search the web" required>
+        <button class="btn" type="submit">Search</button>
+      </form>
     </section>
 
     <section class="quote">
