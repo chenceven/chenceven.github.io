@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Who built the Nocturne group site: how the work was split between markup, styles and content, the rules the group kept, and the dates we publish on.">
+  <title>Team · Nocturne</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Site header: brand, three navigation links -->
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html">Nocturne<span class="star">✦</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="plan.html">The Plan</a>
+        <a class="active" href="team.html">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <main id="main">
+
+    <!-- Page title -->
+    <section class="page-head">
+      <div class="wrap">
+        <p class="crumbs"><a href="index.html">← Home</a></p>
+        <p class="kicker spaced">THREE PAIRS OF HANDS · ONE PALETTE</p>
+        <h1>Who held<br><em>which brush.</em></h1>
+        <p class="lead">
+          Group work only counts when the split is visible. Here is the division of labour,
+          the rules nobody was allowed to break, and how the site gets updated.
+        </p>
+      </div>
+    </section>
+
+    <!-- Illustration: the three layers of the site as glass panels -->
+    <div class="wrap">
+      <p class="rule">The layers</p>
+      <figure class="media">
+        <img src="team-orbit.jpg" alt="Three translucent glass panels stacked at an angle in deep violet space, their edges drawn with glowing gold lines">
+        <figcaption>Three layers, one surface: markup, stylesheet, content.</figcaption>
+      </figure>
+    </div>
+
+    <!-- Roles: what each part of the build actually consisted of -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>The split</h2>
+          <span>roles</span>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <i>01</i>
+            <h3>Structure &amp; markup</h3>
+            <p>Head, navigation, section order, headings, table markup, form markup, alt text
+               and the skip link. Owned by one pair of hands so the three pages nest identically.</p>
+          </div>
+          <div class="card">
+            <i>02</i>
+            <h3>Stylesheet &amp; responsive</h3>
+            <p>One file, numbered by section: tokens, glass panels, gradient text, table
+               styling, and two breakpoints at 860px and 620px.</p>
+          </div>
+          <div class="card">
+            <i>03</i>
+            <h3>Content &amp; imagery</h3>
+            <p>The writing, the three images, the captions, and checking that every sentence
+               on the site is something we can defend in class.</p>
+          </div>
+        </div>
+        <p class="lead">
+          Build and styles were done by <strong>Chen Xiwen</strong>; the wording, the images
+          and the review pass were done together in the group. Member names are added to
+          this page after each meeting rather than written in advance.
+        </p>
+      </div>
+    </section>
+
+    <!-- Rules: the group's non-negotiables -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Rules we kept</h2>
+          <span>non-negotiable</span>
+        </div>
+        <div class="list-block">
+          <ul>
+            <li>Styling <span>only in styles.css, never inline</span></li>
+            <li>Scripts <span>none — no counters, no carousels, no analytics</span></li>
+            <li>Images <span>one per page, always with a real alt text</span></li>
+            <li>Keyboard <span>skip link and visible focus rings on every page</span></li>
+            <li>Contrast <span>body text checked against the dark background</span></li>
+            <li>Motion <span>every animation stops under prefers-reduced-motion</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline: how the work actually moved -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How it moved</h2>
+          <span>four passes</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption>From brief to published page</caption>
+            <thead>
+              <tr>
+                <th scope="col">Pass</th>
+                <th scope="col">What happened</th>
+                <th scope="col">Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Plan</td>
+                <td>Sketched three pages and agreed the palette and the rules</td>
+                <td>plan.html, first draft</td>
+              </tr>
+              <tr>
+                <td>Build</td>
+                <td>Markup and stylesheet written page by page, in that order</td>
+                <td>Three pages, one stylesheet</td>
+              </tr>
+              <tr>
+                <td>Review</td>
+                <td>Read out loud, alt text rewritten, contrast and keyboard checked</td>
+                <td>Second draft, fewer words</td>
+              </tr>
+              <tr>
+                <td>Publish</td>
+                <td>Committed to a subfolder of the repository, served by GitHub Pages</td>
+                <td>Live address</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing quote -->
+    <section class="quote">
+      <div class="wrap">
+        <p>“Everyone can see the seams. That is the point of putting the split on a page.”</p>
+        <p class="from">— review note, pass three</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: copyright, and links back to the two other pages -->
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Nocturne · group coursework</span>
+      <span><a href="index.html">Home</a> · <a href="plan.html">The plan</a> · <a href="https://chenceven.github.io/">Chen Xiwen's site</a></span>
+    </div>
+  </footer>
+</body>
+</html>

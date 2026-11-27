@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nocturne — the group website built for the web design course: three pages, one stylesheet, HTML and CSS only. Home page with the project idea, a build table and a working search form.">
+  <title>Nocturne · Group Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Site header: brand, three navigation links -->
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html">Nocturne<span class="star">✦</span></a>
+      <nav class="nav" aria-label="Main">
+        <a class="active" href="index.html">Home</a>
+        <a href="plan.html">The Plan</a>
+        <a href="team.html">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <main id="main">
+
+    <!-- Hero: the one paragraph someone should read if they read nothing else -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="kicker">GROUP COURSEWORK · WEB DESIGN · HTML + CSS ONLY</p>
+        <h1>Two files.<br><em>One dark, luminous site.</em></h1>
+        <p class="lead">
+          This is the site our group planned in the first assignment and built in the second.
+          Three pages, a single stylesheet, no JavaScript at all — every glow, gradient and
+          glass panel below is plain CSS.
+        </p>
+        <div class="hero-actions">
+          <a class="btn solid" href="plan.html">Read the plan</a>
+          <a class="btn" href="team.html">See who built it</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Illustration: the site's own palette, made as an image -->
+    <div class="wrap">
+      <figure class="media">
+        <img src="hero-aurora.jpg" alt="An abstract night sky in violet, indigo and gold, with layered glass panels and fine gold grid lines">
+        <figcaption>The palette, before it became a page: violet, indigo, champagne gold.</figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap">
+      <p class="rule">What we were told to do</p>
+    </div>
+
+    <!-- Three cards: the brief, restated in our own words -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Three decisions, in order</h2>
+          <span>the brief</span>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <i>01</i>
+            <h3>Structure first</h3>
+            <p>Three pages that make sense on their own: the idea, the plan, and the people.
+               Navigation on every page, so nobody has to guess where they are.</p>
+          </div>
+          <div class="card">
+            <i>02</i>
+            <h3>One stylesheet</h3>
+            <p>All styling lives in <strong>styles.css</strong>. No inline styles, no second
+               theme, no page that quietly breaks the rules the other two follow.</p>
+          </div>
+          <div class="card">
+            <i>03</i>
+            <h3>A story, not a template</h3>
+            <p>A site should read like someone chose it. Dark, gold, slow — and honest about
+               the parts that are still being worked on.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Table: what exists in the repository, page by page -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>The build at a glance</h2>
+          <span>inventory</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption>Three pages, one stylesheet, zero scripts</caption>
+            <thead>
+              <tr>
+                <th scope="col">Page</th>
+                <th scope="col">What it is for</th>
+                <th scope="col">File</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Home</td>
+                <td>The idea, the inventory, and a working search box</td>
+                <td>index.html</td>
+              </tr>
+              <tr>
+                <td>The Plan</td>
+                <td>What we agreed, and what we changed afterwards</td>
+                <td>plan.html</td>
+              </tr>
+              <tr>
+                <td>Team</td>
+                <td>Who did which part, and the rules we kept</td>
+                <td>team.html</td>
+              </tr>
+              <tr>
+                <td>Styles</td>
+                <td>Every rule used by all three pages, numbered by section</td>
+                <td>styles.css</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Utility: a real GET form, which is why it works without JavaScript -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>One honest utility</h2>
+          <span>search</span>
+        </div>
+        <p class="lead">
+          A button that does something is better than a button that pretends. This form sends
+          your words to the MDN documentation search and opens the results in a new tab —
+          no JavaScript, just a <strong>method="get"</strong> form.
+        </p>
+        <form class="search-form" action="https://developer.mozilla.org/en-US/search" method="get" target="_blank" rel="noopener">
+          <label for="q" class="skip">Search the MDN documentation</label>
+          <input id="q" type="search" name="q" placeholder="Search MDN — e.g. grid-template-columns" required>
+          <button class="btn solid" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Closing quote -->
+    <section class="quote">
+      <div class="wrap">
+        <p>“A group site is not three designs side by side. It is one design that survives all three of us.”</p>
+        <p class="from">— our first meeting note</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: copyright, and links back to the two other pages -->
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Nocturne · group coursework</span>
+      <span><a href="plan.html">The plan</a> · <a href="team.html">Team</a> · <a href="https://chenceven.github.io/">Chen Xiwen's site</a></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The plan for the Nocturne group site: what was agreed in the first assignment, what changed during the build, and why each change was made.">
+  <title>The Plan · Nocturne</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Site header: brand, three navigation links -->
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html">Nocturne<span class="star">✦</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a class="active" href="plan.html">The Plan</a>
+        <a href="team.html">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <main id="main">
+
+    <!-- Page title -->
+    <section class="page-head">
+      <div class="wrap">
+        <p class="crumbs"><a href="index.html">← Home</a></p>
+        <p class="kicker spaced">ASSIGNMENT 01 → ASSIGNMENT 02</p>
+        <h1>The plan we wrote,<br><em>and the plan we kept.</em></h1>
+        <p class="lead">
+          A plan that never changes was never tested. Below is what we agreed before
+          building, what moved during the build, and the reason for each move.
+        </p>
+      </div>
+    </section>
+
+    <!-- Illustration: a wireframe drawn as a blueprint -->
+    <div class="wrap">
+      <p class="rule">The drawing</p>
+      <figure class="media">
+        <img src="plan-blueprint.jpg" alt="A gold wireframe of a web page — header, navigation, three cards and a footer — drawn as a blueprint on navy paper">
+        <figcaption>The wireframe we approved in week one, redrawn in the site's own palette.</figcaption>
+      </figure>
+    </div>
+
+    <!-- What was agreed before any code was written -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Agreed first</h2>
+          <span>before code</span>
+        </div>
+        <p class="lead">
+          Four rules, written down before anyone opened an editor. They are the reason the
+          three pages look like one site instead of three.
+        </p>
+        <div class="list-block">
+          <ul>
+            <li>Three pages <span>Home · The Plan · Team</span></li>
+            <li>One stylesheet <span>styles.css, no inline styles</span></li>
+            <li>One palette <span>violet, indigo, champagne gold</span></li>
+            <li>No JavaScript <span>not even for the search box</span></li>
+            <li>Every page <span>one image, one alt text, one clear way back</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- What changed during the build, and why -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What changed</h2>
+          <span>and why</span>
+        </div>
+        <p class="lead">
+          Three deviations from the original plan. Each one was discussed, not drifted into.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <caption>Original plan · change · reason</caption>
+            <thead>
+              <tr>
+                <th scope="col">In the plan</th>
+                <th scope="col">What we built</th>
+                <th scope="col">Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A pale, paper-like theme</td>
+                <td>A dark theme with gold accents</td>
+                <td>The subject is a night-time studio idea; a dark page made the images the light source instead of the decoration.</td>
+              </tr>
+              <tr>
+                <td>Four pages, with a gallery</td>
+                <td>Three pages, no gallery</td>
+                <td>The gallery had no material behind it. Three complete pages beat four with one empty room.</td>
+              </tr>
+              <tr>
+                <td>A newsletter form</td>
+                <td>A working documentation search</td>
+                <td>We cannot receive mail, so a newsletter form would have been a prop. The search form actually submits somewhere.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- What stayed exactly as planned -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What did not change</h2>
+          <span>the promises</span>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <i>01</i>
+            <h3>One stylesheet</h3>
+            <p>Every rule used on every page lives in <strong>styles.css</strong>, grouped and
+               numbered, so a reviewer can find the rule that made a thing look wrong.</p>
+          </div>
+          <div class="card">
+            <i>02</i>
+            <h3>No JavaScript</h3>
+            <p>Gradients, blur, hover states and the slow aurora drift are all CSS. The one
+               interactive thing on the site is a plain form.</p>
+          </div>
+          <div class="card">
+            <i>03</i>
+            <h3>Published, not zipped</h3>
+            <p>The site lives in a subfolder of a group member's repository and is served by
+               GitHub Pages, so the address can be opened by anyone in the class.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing quote -->
+    <section class="quote">
+      <div class="wrap">
+        <p>“Write the plan down so that changing it becomes a decision instead of an accident.”</p>
+        <p class="from">— the note we kept at the top of the file</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: copyright, and links back to the two other pages -->
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Nocturne · group coursework</span>
+      <span><a href="index.html">Home</a> · <a href="team.html">Team</a> · <a href="https://chenceven.github.io/">Chen Xiwen's site</a></span>
+    </div>
+  </footer>
+</body>
+</html>
